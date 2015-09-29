@@ -16,8 +16,10 @@ public class First {
       
       System.out.println("Another line of text");
       
-        System.out.println("Change from Keno");
-        //Printing out nickname :)
+        
+        
+        //Printing out nicknames :)
         System.out.println("Change from Mli");
+        System.out.println("Change from Keno");
   }
 }
