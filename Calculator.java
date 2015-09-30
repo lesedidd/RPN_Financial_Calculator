@@ -39,10 +39,10 @@ public class Calculator extends javax.swing.JFrame {
         blpButton = new javax.swing.JButton();
         rrrButton = new javax.swing.JButton();
         nButton = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
+        sto1Button = new javax.swing.JButton();
+        sto2Button = new javax.swing.JButton();
+        sto3Button = new javax.swing.JButton();
+        clrstoregButton = new javax.swing.JButton();
         oneButton = new javax.swing.JButton();
         twoButton = new javax.swing.JButton();
         threeButton = new javax.swing.JButton();
@@ -93,13 +93,18 @@ public class Calculator extends javax.swing.JFrame {
 
         nButton.setText("n");
 
-        jButton23.setText("STO 1");
+        sto1Button.setText("STO 1");
+        sto1Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sto1ButtonActionPerformed(evt);
+            }
+        });
 
-        jButton24.setText("STO 2");
+        sto2Button.setText("STO 2");
 
-        jButton25.setText("STO 3");
+        sto3Button.setText("STO 3");
 
-        jButton26.setText("CLR STO REG");
+        clrstoregButton.setText("CLR STO REG");
 
         oneButton.setText("1");
         oneButton.addActionListener(new java.awt.event.ActionListener() {
@@ -183,13 +188,13 @@ public class Calculator extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(nButton))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton23)
+                                .addComponent(sto1Button)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton24)
+                                .addComponent(sto2Button)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton25)
+                                .addComponent(sto3Button)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton26))
+                                .addComponent(clrstoregButton))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -265,10 +270,10 @@ public class Calculator extends javax.swing.JFrame {
                     .addComponent(nButton))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton23)
-                    .addComponent(jButton24)
-                    .addComponent(jButton25)
-                    .addComponent(jButton26))
+                    .addComponent(sto1Button)
+                    .addComponent(sto2Button)
+                    .addComponent(sto3Button)
+                    .addComponent(clrstoregButton))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -344,6 +349,10 @@ public class Calculator extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_blpButtonActionPerformed
 
+    private void sto1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sto1ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sto1ButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -384,6 +393,7 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton blpButton;
     private javax.swing.JButton clearAllButton;
     private javax.swing.JButton clearButton;
+    private javax.swing.JButton clrstoregButton;
     private javax.swing.JEditorPane displayPane;
     private javax.swing.JButton divisionButton;
     private javax.swing.JButton eButton;
@@ -394,10 +404,6 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton fvButton;
     private javax.swing.JButton fvaButton;
     private javax.swing.JButton fvadButton;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton multiplyButton;
@@ -414,6 +420,9 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton rrrButton;
     private javax.swing.JButton sevenButton;
     private javax.swing.JButton sixButton;
+    private javax.swing.JButton sto1Button;
+    private javax.swing.JButton sto2Button;
+    private javax.swing.JButton sto3Button;
     private javax.swing.JButton subtractButton;
     private javax.swing.JButton threeButton;
     private javax.swing.JButton twoButton;
